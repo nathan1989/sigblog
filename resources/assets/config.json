@@ -8,7 +8,7 @@
       "./scripts/customizer.js"
     ]
   },
-  "publicPath": "/wp-content/themes/sigblog",
+  "publicPath": "/sigblog/wp-content/themes/sigblog",
   "devUrl": "http://localhost:8888/sigblog",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
