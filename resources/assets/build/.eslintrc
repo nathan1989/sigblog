@@ -3,7 +3,7 @@
   "rules": {
     "import/no-extraneous-dependencies": 0,
     "prefer-rest-params": 0,
-    "comma-dangle": ["error", {
+    "comma-dangle": ["warn", {
       "arrays": "always-multiline",
       "objects": "always-multiline",
       "imports": "always-multiline",

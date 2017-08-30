@@ -24,7 +24,6 @@
   ],
   "eslintConfig": {
     "root": true,
-    "extends": "eslint:recommended",
     "globals": {
       "wp": true
     },
@@ -55,24 +54,14 @@
         "\\.(coffee|scss|css|less|hbs|svg|json)$"
       ]
     },
+    "extends": "eslint:recommended",
     "rules": {
-      "comma-dangle": [
-        "error",
-        {
-          "arrays": "always-multiline",
-          "objects": "always-multiline",
-          "imports": "always-multiline",
-          "exports": "always-multiline",
-          "functions": "ignore"
-        }
-      ]
+      "no-console": 0
     }
   },
   "stylelint": {
     "extends": "stylelint-config-standard",
-    "rules": {
-      "no-empty-source": null
-    }
+    "defaultSeverity": "warning"
   },
   "scripts": {
     "build": "webpack --progress --config resources/assets/build/webpack.config.js",
@@ -104,6 +93,7 @@
     "eslint-plugin-import": "~2.7",
     "extract-text-webpack-plugin": "~3.0",
     "file-loader": "^0.11.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
     "imagemin-mozjpeg": "~6.0",
     "imagemin-webpack-plugin": "~1.5.0-beta.0",
     "import-glob": "~1.5",
