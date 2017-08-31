@@ -22,7 +22,9 @@
 
     .nav {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+        // max-width: 900px;
+        // margin: auto;
         li {
             position: relative;
             display:flex;
@@ -35,6 +37,14 @@
             &:hover {
                 color: lighten($black, .5)
             }
+        }
+
+        li:first-child a {
+            // padding-left: 0;
+        }
+
+        li:last-child a {
+            // padding-right: 0;
         }
 
         .sub-menu {
