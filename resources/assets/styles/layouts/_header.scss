@@ -1,10 +1,5 @@
 .banner {
-    padding-bottom: 20px;
     border-bottom: 1px solid #d0d0d0;
-    .container {
-        max-width: 800px;
-        margin: auto;
-    }
 
     .brand {
         background: url(http://via.placeholder.com/350x150) 0 0 / 100% 100% no-repeat;
@@ -35,8 +30,11 @@
         }
         a {
             color: $black;
-            display: inline-block;
-            // margin: 20px;
+            display: block;
+            padding: 20px;
+            &:hover {
+                color: lighten($black, .5)
+            }
         }
 
         .sub-menu {
@@ -45,11 +43,20 @@
             will-change: opacity;
             position: absolute;
             background: white;
-            padding: 10px;
-            width: 200px;
+            padding: 15px 20px;
+            width: 150px;
             box-shadow: 0 1px 4px rgba(0,0,0,.4);
-            left: -10px;
+            left: 0;
             top: 100%;
+            margin-top: -5px;
+
+            li {
+                display: block;
+            }
+
+            a {
+                padding: 15px 0;
+            }
         }
     }
     

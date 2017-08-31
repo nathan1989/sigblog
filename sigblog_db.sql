@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Aug 31, 2017 at 06:15 AM
+-- Generation Time: Aug 31, 2017 at 06:59 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.6.10
 
@@ -263,7 +263,7 @@ CREATE TABLE `sig_postmeta` (
   `post_id` bigint(20) unsigned NOT NULL DEFAULT '0',
   `meta_key` varchar(255) DEFAULT NULL,
   `meta_value` longtext
-) ENGINE=InnoDB AUTO_INCREMENT=84 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `sig_postmeta`
@@ -275,13 +275,13 @@ INSERT INTO `sig_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (3, 6, '_edit_lock', '1503907214:1'),
 (5, 8, '_edit_last', '1'),
 (6, 8, '_wp_page_template', 'views/home.blade.php'),
-(7, 8, '_edit_lock', '1504150894:1'),
+(7, 8, '_edit_lock', '1504154960:1'),
 (8, 10, '_edit_last', '1'),
 (9, 10, '_wp_page_template', 'default'),
-(10, 10, '_edit_lock', '1503881138:1'),
+(10, 10, '_edit_lock', '1504154952:1'),
 (11, 12, '_edit_last', '1'),
 (12, 12, '_wp_page_template', 'default'),
-(13, 12, '_edit_lock', '1503905781:1'),
+(13, 12, '_edit_lock', '1504154852:1'),
 (14, 15, '_menu_item_type', 'post_type'),
 (15, 15, '_menu_item_menu_item_parent', '0'),
 (16, 15, '_menu_item_object_id', '8'),
@@ -346,7 +346,31 @@ INSERT INTO `sig_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALU
 (80, 22, 'position', 'normal'),
 (81, 22, 'layout', 'no_box'),
 (82, 22, 'hide_on_screen', ''),
-(83, 22, '_edit_lock', '1503905626:1');
+(83, 22, '_edit_lock', '1503905626:1'),
+(84, 23, '_menu_item_type', 'custom'),
+(85, 23, '_menu_item_menu_item_parent', '17'),
+(86, 23, '_menu_item_object_id', '23'),
+(87, 23, '_menu_item_object', 'custom'),
+(88, 23, '_menu_item_target', ''),
+(89, 23, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(90, 23, '_menu_item_xfn', ''),
+(91, 23, '_menu_item_url', '#'),
+(93, 24, '_menu_item_type', 'custom'),
+(94, 24, '_menu_item_menu_item_parent', '17'),
+(95, 24, '_menu_item_object_id', '24'),
+(96, 24, '_menu_item_object', 'custom'),
+(97, 24, '_menu_item_target', ''),
+(98, 24, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(99, 24, '_menu_item_xfn', ''),
+(100, 24, '_menu_item_url', '#'),
+(102, 25, '_menu_item_type', 'custom'),
+(103, 25, '_menu_item_menu_item_parent', '17'),
+(104, 25, '_menu_item_object_id', '25'),
+(105, 25, '_menu_item_object', 'custom'),
+(106, 25, '_menu_item_target', ''),
+(107, 25, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(108, 25, '_menu_item_xfn', ''),
+(109, 25, '_menu_item_url', '#');
 
 -- --------------------------------------------------------
 
@@ -378,7 +402,7 @@ CREATE TABLE `sig_posts` (
   `post_type` varchar(20) NOT NULL DEFAULT 'post',
   `post_mime_type` varchar(100) NOT NULL DEFAULT '',
   `comment_count` bigint(20) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `sig_posts`
@@ -396,14 +420,17 @@ INSERT INTO `sig_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `pos
 (12, 1, '2017-08-03 07:40:40', '2017-08-03 07:40:40', '', 'About', '', 'publish', 'closed', 'closed', '', 'about', '', '', '2017-08-03 07:40:40', '2017-08-03 07:40:40', '', 0, 'http://localhost:8888/sigblog/?page_id=12', 0, 'page', '', 0),
 (13, 1, '2017-08-03 07:40:40', '2017-08-03 07:40:40', '', 'About', '', 'inherit', 'closed', 'closed', '', '12-revision-v1', '', '', '2017-08-03 07:40:40', '2017-08-03 07:40:40', '', 12, 'http://localhost:8888/sigblog/2017/08/03/12-revision-v1/', 0, 'revision', '', 0),
 (14, 1, '2017-08-28 00:44:44', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-08-28 00:44:44', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/sigblog/?p=14', 0, 'post', '', 0),
-(15, 1, '2017-08-28 00:49:56', '2017-08-28 00:49:56', ' ', '', '', 'publish', 'closed', 'closed', '', '15', '', '', '2017-08-28 07:49:35', '2017-08-28 07:49:35', '', 0, 'http://localhost:8888/sigblog/?p=15', 1, 'nav_menu_item', '', 0),
-(16, 1, '2017-08-28 00:49:57', '2017-08-28 00:49:57', ' ', '', '', 'publish', 'closed', 'closed', '', '16', '', '', '2017-08-28 07:49:35', '2017-08-28 07:49:35', '', 0, 'http://localhost:8888/sigblog/?p=16', 4, 'nav_menu_item', '', 0),
-(17, 1, '2017-08-28 00:49:56', '2017-08-28 00:49:56', ' ', '', '', 'publish', 'closed', 'closed', '', '17', '', '', '2017-08-28 07:49:35', '2017-08-28 07:49:35', '', 0, 'http://localhost:8888/sigblog/?p=17', 2, 'nav_menu_item', '', 0),
+(15, 1, '2017-08-28 00:49:56', '2017-08-28 00:49:56', ' ', '', '', 'publish', 'closed', 'closed', '', '15', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=15', 1, 'nav_menu_item', '', 0),
+(16, 1, '2017-08-28 00:49:57', '2017-08-28 00:49:57', ' ', '', '', 'publish', 'closed', 'closed', '', '16', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=16', 7, 'nav_menu_item', '', 0),
+(17, 1, '2017-08-28 00:49:56', '2017-08-28 00:49:56', ' ', '', '', 'publish', 'closed', 'closed', '', '17', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=17', 2, 'nav_menu_item', '', 0),
 (18, 1, '2017-08-28 00:48:50', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-08-28 00:48:50', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/sigblog/?p=18', 1, 'nav_menu_item', '', 0),
 (19, 1, '2017-08-28 00:48:50', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'closed', 'closed', '', '', '', '', '2017-08-28 00:48:50', '0000-00-00 00:00:00', '', 0, 'http://localhost:8888/sigblog/?p=19', 1, 'nav_menu_item', '', 0),
-(20, 1, '2017-08-28 00:50:53', '2017-08-28 00:50:53', '', 'Instagram', '', 'publish', 'closed', 'closed', '', 'instagram', '', '', '2017-08-28 07:49:35', '2017-08-28 07:49:35', '', 0, 'http://localhost:8888/sigblog/?p=20', 5, 'nav_menu_item', '', 0),
-(21, 1, '2017-08-28 07:18:45', '2017-08-28 07:18:45', '', 'Life', '', 'publish', 'closed', 'closed', '', 'travel', '', '', '2017-08-28 07:49:35', '2017-08-28 07:49:35', '', 0, 'http://localhost:8888/sigblog/?p=21', 3, 'nav_menu_item', '', 0),
-(22, 1, '2017-08-28 07:36:07', '2017-08-28 07:36:07', '', 'Image', '', 'publish', 'closed', 'closed', '', 'acf_image', '', '', '2017-08-28 07:36:07', '2017-08-28 07:36:07', '', 0, 'http://localhost:8888/sigblog/?post_type=acf&#038;p=22', 0, 'acf', '', 0);
+(20, 1, '2017-08-28 00:50:53', '2017-08-28 00:50:53', '', 'Instagram', '', 'publish', 'closed', 'closed', '', 'instagram', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=20', 8, 'nav_menu_item', '', 0),
+(21, 1, '2017-08-28 07:18:45', '2017-08-28 07:18:45', '', 'Life', '', 'publish', 'closed', 'closed', '', 'travel', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=21', 3, 'nav_menu_item', '', 0),
+(22, 1, '2017-08-28 07:36:07', '2017-08-28 07:36:07', '', 'Image', '', 'publish', 'closed', 'closed', '', 'acf_image', '', '', '2017-08-28 07:36:07', '2017-08-28 07:36:07', '', 0, 'http://localhost:8888/sigblog/?post_type=acf&#038;p=22', 0, 'acf', '', 0),
+(23, 1, '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 'Baby Sprout', '', 'publish', 'closed', 'closed', '', 'baby-sprout', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=23', 4, 'nav_menu_item', '', 0),
+(24, 1, '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 'Parenthood', '', 'publish', 'closed', 'closed', '', 'parenthood', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=24', 5, 'nav_menu_item', '', 0),
+(25, 1, '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 'Wedding', '', 'publish', 'closed', 'closed', '', 'wedding', '', '', '2017-08-31 04:56:27', '2017-08-31 04:56:27', '', 0, 'http://localhost:8888/sigblog/?p=25', 6, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -467,7 +494,10 @@ INSERT INTO `sig_term_relationships` (`object_id`, `term_taxonomy_id`, `term_ord
 (16, 7, 0),
 (17, 7, 0),
 (20, 7, 0),
-(21, 7, 0);
+(21, 7, 0),
+(23, 7, 0),
+(24, 7, 0),
+(25, 7, 0);
 
 -- --------------------------------------------------------
 
@@ -495,7 +525,7 @@ INSERT INTO `sig_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `des
 (4, 4, 'category', '', 0, 0),
 (5, 5, 'category', '', 0, 0),
 (6, 6, 'category', '', 0, 0),
-(7, 7, 'nav_menu', '', 0, 5);
+(7, 7, 'nav_menu', '', 0, 8);
 
 -- --------------------------------------------------------
 
@@ -696,12 +726,12 @@ ALTER TABLE `sig_options`
 -- AUTO_INCREMENT for table `sig_postmeta`
 --
 ALTER TABLE `sig_postmeta`
-  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=84;
+  MODIFY `meta_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=111;
 --
 -- AUTO_INCREMENT for table `sig_posts`
 --
 ALTER TABLE `sig_posts`
-  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=23;
+  MODIFY `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `sig_termmeta`
 --
