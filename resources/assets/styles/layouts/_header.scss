@@ -29,10 +29,14 @@
         display: flex;
         justify-content: space-around;
         li {
-            float: left;
+            position: relative;
+            display:flex;
+            justify-content: center;
         }
         a {
             color: $black;
+            display: inline-block;
+            // margin: 20px;
         }
 
         .sub-menu {
@@ -42,6 +46,10 @@
             position: absolute;
             background: white;
             padding: 10px;
+            width: 200px;
+            box-shadow: 0 1px 4px rgba(0,0,0,.4);
+            left: -10px;
+            top: 100%;
         }
     }
     

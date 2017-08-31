@@ -2,7 +2,6 @@ export default {
   init() {
     // JavaScript to be fired on all pages
     const navItem = document.querySelectorAll('.menu-item-has-children')
-    console.log('variable')
     function showMenu(){
       this.classList.add('trigger-enter')
       setTimeout(() => this.classList.contains('trigger-enter') && this.classList.add('trigger-enter-active'), 150)

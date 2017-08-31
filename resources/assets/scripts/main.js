@@ -10,6 +10,12 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 
+// ie fix
+(function () {
+  if (typeof NodeList.prototype.forEach === "function") return false;
+  NodeList.prototype.forEach = Array.prototype.forEach;
+})()
+
 /** Populate Router instance with DOM routes */
 const routes = new Router({
   // All pages
