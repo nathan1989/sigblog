@@ -9,14 +9,14 @@
     .brand {
         background: url(http://via.placeholder.com/350x150) 0 0 / 100% 100% no-repeat;
         display: block;
-        margin: 40px auto;
+        margin: 60px auto;
         @include size(350px, 150px);
         font-size: 0;
     }
 
     .intro {
         text-align: center;
-        margin: 20px 0;
+        margin: 20px 0 40px;
     }
 
     ul {
