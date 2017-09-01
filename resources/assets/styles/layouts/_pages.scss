@@ -1,3 +1,17 @@
 .wrap {
     margin-top: 30px;
 }
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+
+    .image-wrap {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 30px;
+        }
+    }
+}
