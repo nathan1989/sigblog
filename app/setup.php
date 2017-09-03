@@ -127,3 +127,10 @@ add_action('after_setup_theme', function () {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
 });
+
+add_filter( 'get_the_archive_title', function ($title) {
+  if ( is_category() ) {
+    $title = single_cat_title( '', false );
+  }
+  return $title;
+});
