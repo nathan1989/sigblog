@@ -11,7 +11,8 @@
       $image = get_field('about-image');
       if( !empty($image) ): ?>
       <div class="image-wrap">
-        <img src="<?php echo $image['sizes'][ 'about-cropped-image' ]; ?>" alt="<?php echo $image['alt']; ?>" />
+        <!-- <img src="<?php echo $image['sizes'][ 'about-cropped-image' ]; ?>" alt="<?php echo $image['alt']; ?>" /> -->
+        <img src="http://lorempixel.com/300/400/cats/" alt="" />
       </div>
       <?php endif; ?>
       <div class="content">
