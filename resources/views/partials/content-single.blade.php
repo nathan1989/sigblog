@@ -3,6 +3,9 @@
     <h1 class="entry-title">{{ get_the_title() }}</h1>
     @include('partials/entry-meta')
   </header>
+  <div class="image-wrap">
+    <img src="http://lorempixel.com/600/400/" alt="">
+  </div>
   <div class="entry-content">
     @php(the_content())
   </div>

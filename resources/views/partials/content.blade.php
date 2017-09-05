@@ -4,13 +4,11 @@
     @include('partials/entry-meta')
   </header>
   <div class="image-wrap">
-    <a href="{{ get_permalink() }}">
     @if(is_front_page())
-      <img src="http://lorempixel.com/800/800/" alt="">
-    @else
-      <img src="http://lorempixel.com/300/300/" alt="">
+      <img src="http://lorempixel.com/600/400/" alt="">
+    @else      
+    <a href="{{ get_permalink() }}"><img src="http://lorempixel.com/300/300/" alt=""></a>
     @endif
-    </a>
   </div>
   <a href="{{ get_permalink() }}" class="more-link">Read more</a>
 </article>

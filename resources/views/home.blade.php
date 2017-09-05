@@ -8,7 +8,6 @@
   @while(have_posts()) @php(the_post())
     @include('partials.page-header')
     @include('partials.content-page')
-    <h2>Latest post</h2>
     <?php 
 		$wp_query = new WP_Query(); $wp_query->query('posts_per_page=1');
 		while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
