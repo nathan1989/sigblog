@@ -8,7 +8,7 @@
     @if(is_front_page())
       <img src="http://lorempixel.com/800/800/" alt="">
     @else
-      <img src="http://lorempixel.com/200/200/" alt="">
+      <img src="http://lorempixel.com/300/300/" alt="">
     @endif
     </a>
   </div>
