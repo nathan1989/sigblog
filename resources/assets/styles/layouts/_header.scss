@@ -6,6 +6,7 @@
         display: block;
         margin: 60px auto;
         @include size(350px, 150px);
+        max-width: 100%;
         font-size: 0;
     }
 
@@ -47,6 +48,18 @@
             // padding-right: 0;
         }
 
+        .menu-item-has-children {
+            > a {
+                &:after {
+                    content: '\f078';
+                    font-family: FontAwesome;
+                    font-size: 10px;
+                    position: relative;
+                    left: 5px;
+                }
+            }
+        }
+
         .sub-menu {
             opacity: 0;
             display: none;
@@ -59,7 +72,7 @@
             left: 0;
             top: 100%;
             margin-top: -5px;
-            transition: all .2s;
+            transition: all .4s;
 
             li {
                 display: block;

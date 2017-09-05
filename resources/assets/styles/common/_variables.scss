@@ -1,5 +1,18 @@
+// fonts
+$work-sans: 'Work Sans', sans-serif;
+
 // wp
-$spacer:                2rem;
+$spacer: 2rem;
+
+// breakpoints
+$bp-medium: 768px;
 
 // colors
 $black: #202020;
+
+// body
+$body-font: $work-sans;
+$body-color: #3d4246;
+
+// links
+$link-color: $body-color;

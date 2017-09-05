@@ -2,16 +2,45 @@
     margin-top: 30px;
 }
 
-.about-wrapper {
-    display: flex;
-    align-items: center;
+.page-header {
+    h1 {
+        margin-top: 0;
+    }
+}
 
-    .image-wrap {
+.blog-list {
+    @media(min-width: $bp-medium){            
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article {
         display: flex;
         align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
 
+        @media(min-width: $bp-medium){        
+            flex: 0 0 50%;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.about-wrapper {
+    @media(min-width: $bp-medium){  
+        display: flex;
+    }
+
+    .image-wrap {
+        text-align: center;
         img {
-            margin-right: 30px;
+            margin-bottom: 15px;
+            @media(min-width: $bp-medium){                  
+                margin-right: 30px;
+                margin-bottom: 0;
+                max-width: none;
+            }
         }
     }
 }
