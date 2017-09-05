@@ -17,8 +17,14 @@
 		<?php endwhile; ?>
 
 		<?php wp_reset_postdata(); ?>
-    <div class="insta-feed">
-    
-    </div>
+
+    <section class="insta-section">
+      <h2 class="title">Instagram feed</h2>
+      <div class="insta-feed">
+        @for ($i = 0; $i < 4; $i++)
+          <a href="#"><img src="http://lorempixel.com/180/180/" alt="" class="image"></a>
+        @endfor
+      </div>
+    </section>
   @endwhile
 @endsection

@@ -17,6 +17,30 @@
     }
 }
 
+.insta-section {
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .insta-feed {
+        text-align: center;
+        @media(min-width: $bp-medium){    
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto 15px;
+            @media(min-width: $bp-medium){            
+                display: inline-block;
+            }
+        }
+    }
+}
+    
 .blog-list {
     @media(min-width: $bp-medium){            
         display: flex;
