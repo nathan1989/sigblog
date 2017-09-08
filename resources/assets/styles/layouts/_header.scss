@@ -19,6 +19,7 @@
         margin: 15px 0 40px;
         @media(min-width: $bp-medium){
             margin-bottom: 90px;
+            font-size: 20px;
         }
     }
 
@@ -31,7 +32,7 @@
     .nav {
         display: flex;
         justify-content: space-between;
-        max-width: 600px;
+        max-width: 400px;
         margin: auto;
 
         li {
@@ -40,11 +41,12 @@
             justify-content: center;
         }
         a {
-            color: $black;
+            color: $body-color;
             display: block;
             padding: 20px;
+            font-weight: normal;
             &:hover {
-                color: lighten($black, .5)
+                color: lighten($body-color, .5)
             }
         }
 
