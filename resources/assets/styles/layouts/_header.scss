@@ -2,12 +2,16 @@
     border-bottom: 1px solid #d0d0d0;
 
     .brand {
-        background: url(../images/logo.jpg) 0 0 / 100% 100% no-repeat;
+        background: url(../images/logo.jpg) center center / contain no-repeat;
         display: block;
         margin: 60px auto 0;
-        @include size(800px, 372px);
         max-width: 100%;
-        font-size: 0;
+        font-size: 0;  
+        @include size(500px, 150px);
+        
+        @media(min-width: $bp-medium){            
+            @include size(800px, 372px);
+        }
     }
 
     .intro {
