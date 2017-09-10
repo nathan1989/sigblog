@@ -1,0 +1,43 @@
+.modal-open {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        @include size(100%);
+        background: rgba(0,0,0,.6);
+    }
+}
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+        width: 500px;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: -30px;
+        right: -30px;
+        border: 0;
+        background: 0;
+        font-size: 0;
+        transition: opacity .2s;
+        &:after {
+            content: '\f00d';
+            font-size: 20px;
+            font-family: FontAwesome;
+            color: white;
+        }
+
+        &:hover {
+            opacity: .6;
+        }
+    }
+}
