@@ -49,8 +49,8 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
     add_image_size( 'about-cropped-image', 300, 400, false );
-    add_image_size( 'blog-large-image', 600, 400, true );
-    add_image_size( 'blog-small-image', 300, 300, true );
+    add_image_size( 'blog-large-image', 600, 400, false );
+    add_image_size( 'blog-small-image', 400, 250, array( 'center', 'top' ) );
 
     /**
      * Enable HTML5 markup support

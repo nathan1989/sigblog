@@ -44,7 +44,7 @@
             color: $body-color;
             display: block;
             padding: 20px;
-            font-weight: normal;
+            text-decoration: none;
             &:hover {
                 color: lighten($body-color, .5)
             }
