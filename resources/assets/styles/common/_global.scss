@@ -10,7 +10,7 @@ body {
     margin: auto;
     padding: 0 20px;
     @media(min-width: $bp-medium){        
-        padding: 0;
+        padding: 0 10px;
     }
 }
 
