@@ -65,7 +65,7 @@
   },
   "scripts": {
     "build": "webpack --progress --config resources/assets/build/webpack.config.js",
-    "build:production": "webpack --progress -p --config resources/assets/build/webpack.config.js",
+    "prod": "webpack --progress -p --config resources/assets/build/webpack.config.js",
     "build:profile": "webpack --progress --profile --json --config resources/assets/build/webpack.config.js",
     "start": "webpack --hide-modules --watch --config resources/assets/build/webpack.config.js",
     "rmdist": "rimraf dist",

@@ -19,7 +19,7 @@
 		<?php wp_reset_postdata(); ?>
 
     <section class="insta-section">
-      {{--  <h2 class="title">Instagram feed</h2>  --}}
+      <h2 class="title"><i class="fa fa-instagram"></i></h2>
       <div class="insta-feed">      
     <?php
       function rudr_instagram_api_curl_connect( $api_url ){

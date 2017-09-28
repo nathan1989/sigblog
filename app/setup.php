@@ -49,7 +49,7 @@ add_action('after_setup_theme', function () {
      */
     add_theme_support('post-thumbnails');
     add_image_size( 'about-cropped-image', 300, 400, false );
-    add_image_size( 'blog-large-image', 800, 500, false );
+    add_image_size( 'blog-large-image', 800, 9999, false );
     add_image_size( 'blog-small-image', 400, 250, array( 'center', 'top' ) );
 
     /**
