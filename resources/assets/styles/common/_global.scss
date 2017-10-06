@@ -3,6 +3,11 @@
   src: url(../fonts/AvenirLTStd-Light.woff2) format('woff2'), url(../fonts/AvenirLTStd-Light.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'avenir-bold';
+  src: url(../fonts/AvenirLT-Black.woff2) format('woff2'), url(../fonts/AvenirLT-Black.woff2) format('woff2');
+}
+
 body {
   font-size: 16px;
   line-height: 20px;
@@ -46,4 +51,10 @@ p {
   & + p {
     margin-top: 15px;
   }
+}
+
+strong,
+b {
+  font-family: $avenir-bold;
+  font-weight: normal;
 }
