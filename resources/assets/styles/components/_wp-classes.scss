@@ -54,3 +54,30 @@
   color: #000;
   background: #fff;
 }
+
+.two-column {  
+  @media(min-width: $bp-medium){            
+      max-width: calc(50% - 10px);
+      display: inline-block;
+      vertical-align: middle;
+
+      + .two-column {
+        margin-left: 15px;
+      }
+  }
+}
+
+.three-column {  
+  @media(min-width: $bp-medium){            
+      max-width: calc(33.33% - 10px);
+      display: inline-block;
+      vertical-align: middle;
+
+      + .three-column {
+        margin-left: 15px;
+        + .three-column {
+          margin-left: 15px;
+        }
+      }
+  }
+}

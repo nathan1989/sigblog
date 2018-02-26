@@ -34,6 +34,7 @@
       
       $access_token = '192561124.9b9924d.a87109b736e147989c8bd2f69e473029';
       $username = 'siglouise';
+
       $user_search = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/users/search?q=" . $username . "&access_token=" . $access_token);
       // $user_search is an array of objects of all found users
       // we need only the object of the most relevant user - $user_search->data[0]
@@ -44,6 +45,7 @@
       // $user_search->data[0]->username - Username
       
       $user_id = $user_search->data[0]->id; // or use string 'self' to get your own media
+      
       $return = rudr_instagram_api_curl_connect("https://api.instagram.com/v1/users/" . $user_id . "/media/recent?access_token=" . $access_token);
       
       // echo '<pre>';
@@ -51,7 +53,9 @@
       // echo '</pre>';
       $i = 0;
       foreach ($return->data as $post) {
-        $thumbnail = str_replace('s150x150/', 's320x320/', $post->images->thumbnail->url);
+        $thumbnail = $post->images->thumbnail->url;
+        $thumbnail = str_replace('s150x150/', 's320x320/', $thumbnail);
+        $thumbnail = preg_replace('/vp\/[^\/]*/', 'hphotos-xfp1', $thumbnail);
         if(++$i == 5) break;
         echo '<a href="' . $post->link . '" target="_blank"><img src="' . $thumbnail . '" class="image" /></a>';
       }
