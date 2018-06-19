@@ -19,26 +19,6 @@
 
 .insta-section {
     margin-top: 100px;
-
-    .title {
-        margin-top: 0;
-        margin-bottom: 10px;
-        font-size: 35px;
-    }
-    
-    .insta-feed {
-        text-align: center;
-        @media(min-width: $bp-medium){    
-            display: flex;
-            justify-content: center;
-        }
-
-        .image {
-            display: block;
-            margin: auto;
-            @include size(200px);
-        }
-    }
 }
     
 .blog-list {

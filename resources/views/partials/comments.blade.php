@@ -6,9 +6,14 @@ if (post_password_required()) {
 
 <section id="comments" class="comments">
   @if (have_comments())
-    <h2>
-      {!! sprintf(_nx('One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>') !!}
-    </h2>
+
+    @if (get_comments_number() > 1)
+    <h2>{!! get_comments_number() !!} comments</h2>
+    @else
+    <h2>{!! get_comments_number() !!} comment</h2>
+    @endif
+
+    @php(comment_form())
 
     <ol class="comment-list">
       {!! wp_list_comments(['style' => 'ol', 'short_ping' => true]) !!}
@@ -33,6 +38,4 @@ if (post_password_required()) {
       {{ __('Comments are closed.', 'sage') }}
     </div>
   @endif
-
-  @php(comment_form())
 </section>
